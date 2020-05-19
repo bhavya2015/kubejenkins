@@ -5,7 +5,6 @@ metadata:
 spec:
   replicas: 3
   selector:
-    env: production
     matchExpressions:
       - { key: env, operator: In , values: [production] }
       - { key: region, operator: In , values: [IN] }
